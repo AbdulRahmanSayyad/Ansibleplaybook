@@ -6,7 +6,11 @@
     connection: ssh
     tasks:
       - name: Installing Git on remote host
-        action: yum name=git state=absent
+        yum:
+          name: git
+          state: present
       
       - name: Installing apache
-        action: yum name=httpd state=absent
+        yum: 
+          name: httpd
+          state: present
