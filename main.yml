@@ -1,6 +1,6 @@
 ---
   - name: Test Playbook
-    hosts: webservers
+    hosts: testserver
     user: ansible
     become: yes
     connection: ssh
